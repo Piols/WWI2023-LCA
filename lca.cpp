@@ -38,7 +38,7 @@ void DFS(int x) {
 				par[syn][i] = par[pop_przodek][i - 1];
 				dist[syn][i] = dist[syn][i - 1] + dist[pop_przodek][i - 1];
 			}
-      DFS(syn);
+			DFS(syn);
 		}
 	}
 }
